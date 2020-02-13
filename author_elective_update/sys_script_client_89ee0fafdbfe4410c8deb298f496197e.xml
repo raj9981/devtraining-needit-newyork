@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>set location for the current user.</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Needit set user location</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+g_form.setValue('description','raj');
+	var id = g_user.userID;
+	var user = new GlideRecord('sys_user');
+	//g.form.setvalue(gs.getUser().getRecord().getValue('location'));
+	//g_form.setvalue(scriptIncludeName(user.location));
+	
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>raj@99</sys_created_by>
+        <sys_created_on>2020-02-12 15:56:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>89ee0fafdbfe4410c8deb298f496197e</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>Needit set user location</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_client_89ee0fafdbfe4410c8deb298f496197e</sys_update_name>
+        <sys_updated_by>raj@99</sys_updated_by>
+        <sys_updated_on>2020-02-12 17:38:43</sys_updated_on>
+        <table>x_58872_needit_needit</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>87ea0a36db706704536ad5b0cf961983</instance_id>
+        <instance_name>dev71673</instance_name>
+        <name>sys_script_client_89ee0fafdbfe4410c8deb298f496197e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;set location for the current user.&lt;/description&gt;&lt;field&gt;active&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Needit set user location&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+g_form.setValue('description','raj');
+	var id = g_user.userID;
+	var user = new GlideRecord('sys_user');
+	//g.form.setvalue(gs.getUser().getRecord().getValue('location'));
+	//g_form.setvalue(scriptIncludeName(user.location));
+	
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;raj@99&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-02-12 15:56:58&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;89ee0fafdbfe4410c8deb298f496197e&lt;/sys_id&gt;&lt;sys_mod_count&gt;25&lt;/sys_mod_count&gt;&lt;sys_name&gt;Needit set user location&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_89ee0fafdbfe4410c8deb298f496197e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;raj@99&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-12 17:38:43&lt;/sys_updated_on&gt;&lt;table&gt;x_58872_needit_needit&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>569883446</payload_hash>
+        <record_name>Needit set user location</record_name>
+        <reverted_from/>
+        <source>47017463dbf64410c8deb298f49619f4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>raj@99</sys_created_by>
+        <sys_created_on>2020-02-12 17:38:43</sys_created_on>
+        <sys_id>96e6ef67db728410c8deb298f4961900</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1703a7b4c280000001</sys_recorded_at>
+        <sys_updated_by>raj@99</sys_updated_by>
+        <sys_updated_on>2020-02-12 17:38:43</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>12e6ef67c37284106b4314c3a6a21f00</update_guid>
+        <update_guid_history>12e6ef67c37284106b4314c3a6a21f00:569883446,cfc567a33b728410e2685a6f9739165a:-1725189227,17a32b633f7284108a0bad2c93692ec3:-2129854154,2db2e3a352728410b6977bb94ee8b408:354905372,3a5267230d72841060de8046bed69e17:1150489976,8ef06fafd93284104f3185494fec6931:-864626580,6370a323377284102cc47b7d7c2ab9a3:179803628,63302bef743284108187b9eb8ba23f66:-2117507181,83ff1bef2b328410507079903f9e0a36:-1007089082,d0df1bef4d3284101c28103bb8748f31:433137894,43fedbaff5328410bcadcfc81c0041b3:-2117507181,055e9b6fcf328410e4f36584f977612e:1909823476,e6fd972f4732841011fe51ca0547b0e6:2139524068,eb8d1fabae328410ccf9a84122bdaf87:-1966781851,2fec1f2f01328410c045d86620a90a74:924907163,e6acdbab6c328410d619fa3aa498711d:-1350398307,877c572fe0328410d7546d8d4da24b39:1207123043,2eaadf6b4b328410676b9e90a61557bf:-883895037,1359d7a7ef3284109ef05d51b2b597ce:-1061208260,b3535ba3e1328410efb31d8b1af0345a:-84668294,0ca213e33b328410373be148d419c6b8:1062029867,d642db63ea3284100f37d94032e4a87e:2095633134,0d0213e3083284102c9adb979973ffb3:1020869787,43319b6390328410f4f213df9700411f:1104095296,c2c093efd7fe44107678213807336f71:-2030179943,f39f8faf08fe44101002b2632d4c3045:-697249711</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>raj@99</sys_created_by>
+        <sys_created_on>2020-02-12 18:30:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>432343d163964118a5eeeeb8b932ebe4</sys_id>
+        <sys_metadata>89ee0fafdbfe4410c8deb298f496197e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Needit set user location</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent display_value="NeedIt">45007fcd0fa83200cd674f8ce1050ebc</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_client_89ee0fafdbfe4410c8deb298f496197e</sys_update_name>
+        <sys_update_version display_value="sys_script_client_89ee0fafdbfe4410c8deb298f496197e">96e6ef67db728410c8deb298f4961900</sys_update_version>
+        <sys_updated_by>raj@99</sys_updated_by>
+        <sys_updated_on>2020-02-12 18:30:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
