@@ -17,16 +17,16 @@
 	
 	  // Type appropriate comment here, and begin script below
 // 	var name = g_user.userID;
-// 	var id = g_form.getValue('u_requested_for');
+// 	var id = new user(g_form.getValue('u_requested_for'));
 // 	var user = new GlideRecord('sys_user');
-// 	user.addQuery('sys_id',name);
+// 	user.addQuery('sys_id',=,id);
 //  	user.query();
 //     if(user.next())	{
 //     g_form.setValue('location', user.location);
 //  		}
 
 	
-	var caller = g_form.getReference('u_requested_for', doAlert);
+	var caller = g_form.getReference('u_requested_for',doAlert);
 	
 	function doAlert(caller) { //reference is passed into callback as first arguments
     g_form.setValue('location',caller.location);
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>07224efbdb7a8410c8deb298f4961923</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Needit set user location</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -51,7 +51,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_script_client_07224efbdb7a8410c8deb298f4961923</sys_update_name>
         <sys_updated_by>raj@99</sys_updated_by>
-        <sys_updated_on>2020-02-13 07:06:19</sys_updated_on>
+        <sys_updated_on>2020-02-14 10:26:06</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
