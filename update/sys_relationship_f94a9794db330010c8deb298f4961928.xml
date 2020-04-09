@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>sys_user</basic_apply_to>
+        <basic_query_from>sys_user</basic_query_from>
+        <insert_callback/>
+        <name>Reportees</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+    // Add your code here, such as current.addQuery(field, value);
+
+    var sysid = parent.getValue("sys_id");
+    gs.addInfoMessage(sysid);
+
+    function getManager(userID) {
+        var gr = new GlideRecord('sys_user');
+        gr.addQuery('sys_id', userID);
+        gr.query();
+        while (gr.next()) {
+            if (gr.manager) {
+                var output = getManager(gr.manager);
+                output = gr.manager.getDisplayValue() + ' -> ' + output;
+                return output;
+            } else return null;
+        }
+    }
+
+
+
+
+    //(getManager(sysid));
+    //current.addQuery("manager",""+getManager(sysid));
+    //gs.addInfoMessage(current.addQuery("manager", "" + getManager(sysid)));
+template.print(getManager(sysid));
+
+
+
+
+    // 	if (parent.getValue("title") == "director of groups") {
+    //         var value = parent.getDisplayValue("manager");
+    //         gs.addInfoMessage("" + value);
+    // 		gs.addInfoMessage(current.addQuery("manager",value));
+    //         current.addQuery("manager",value);
+    //         current.addQuery("manager", "Robert");
+
+    //     } else {
+    //         current.addQuery("title", "axa");
+    //     }
+
+})(current, parent);]]></query_with>
+        <reference_field>building</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>raj@99</sys_created_by>
+        <sys_created_on>2020-03-23 07:46:53</sys_created_on>
+        <sys_id>f94a9794db330010c8deb298f4961928</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_name>Reportees</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_relationship_f94a9794db330010c8deb298f4961928</sys_update_name>
+        <sys_updated_by>raj@99</sys_updated_by>
+        <sys_updated_on>2020-04-01 04:39:47</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=f94a9794db330010c8deb298f4961928"/>
+</record_update>
